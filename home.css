@@ -1,0 +1,63 @@
+
+/* Malaysia Math — Home Screen Polish */
+
+.hero {
+  gap: clamp(18px, 3vw, 32px);
+  padding: clamp(22px, 4vw, 42px);
+  border-radius: 30px;
+}
+
+.hero h1 {
+  line-height: 1.05;
+  max-width: 9ch;
+}
+
+.hero p {
+  max-width: 36ch;
+}
+
+.cta {
+  min-height: 50px;
+  padding: 14px 24px;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px #a94963;
+}
+
+.forest-scene {
+  isolation: isolate;
+  min-width: 0;
+}
+
+.forest-friends img {
+  flex-shrink: 1;
+  min-width: 0;
+}
+
+.stats {
+  margin-top: 22px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 650px) {
+  .hero {
+    gap: 18px;
+  }
+
+  .hero h1 {
+    max-width: none;
+  }
+
+  .forest-scene {
+    min-height: 210px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cta {
+    transition: none;
+  }
+}
